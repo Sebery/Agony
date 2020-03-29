@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Mission1
+  - Homeless
+  - Mission2
+  - PlantPlace
+  - Trash
+  - Mission3
   layers:
   - Default
   - TransparentFX
@@ -40,4 +46,19 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Sky
+    uniqueID: 1239159063
+    locked: 0
+  - name: Furniture
+    uniqueID: 4273508091
+    locked: 0
+  - name: Ground
+    uniqueID: 2075132383
+    locked: 0
+  - name: Player
+    uniqueID: 4061567365
+    locked: 0
+  - name: Camera
+    uniqueID: 1332154807
     locked: 0
