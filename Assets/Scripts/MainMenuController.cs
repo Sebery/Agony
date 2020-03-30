@@ -71,11 +71,15 @@ public class MainMenuController : MonoBehaviour
     }
 
     public void ToDay302() {
-        SceneManager.LoadScene("GameLevel03", LoadSceneMode.Single);
+        SceneManager.LoadScene("GameLevel04", LoadSceneMode.Single);
     }
 
     public void Finally() {
         SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);
+    }
+
+    public void Exit() {
+	Application.Quit();
     }
 
 }

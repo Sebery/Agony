@@ -10,6 +10,7 @@ TagManager:
   - PlantPlace
   - Trash
   - Mission3
+  - Mission4
   layers:
   - Default
   - TransparentFX

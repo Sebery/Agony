@@ -1162,7 +1162,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Mission:
 
-    Plant a bush'
+    Throw Trash'
 --- !u!222 &546665854
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8157,7 +8157,7 @@ SpriteRenderer:
   m_SortingLayerID: -233399931
   m_SortingLayer: 4
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 47b2a4a63a26bce4086bf3f204582a74, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7ae2112c0b6245c448c44cfb633aed6d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -8201,7 +8201,7 @@ MonoBehaviour:
   zoomOutTime: 0.85
   canMove: 0
   buyHotdogText: {fileID: 959985835}
-  hotDogImage: {fileID: 1782662019}
+  hotDogImage: {fileID: 2038061944}
   itemBg: {fileID: 728992860}
   mission1Text01: {fileID: 1730970501}
   mission1Text02: {fileID: 546665851}
@@ -8210,6 +8210,7 @@ MonoBehaviour:
   phaseOrMissionNumber: 0
   bushPlanted: {fileID: 889561074}
   buyPlant: 0
+  death: {fileID: 0}
 --- !u!61 &1308016698
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8223,11 +8224,11 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.13140957, y: 0.03800752}
+  m_Offset: {x: 0, y: -0.09}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.2, y: 1.2}
+    oldSize: {x: 0.32, y: 0.32}
     newSize: {x: 1.2, y: 1.2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -8816,7 +8817,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Mission:
 
-    Buy a bush'
+    Collect trash'
 --- !u!222 &1730970504
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -24,6 +24,9 @@ public class GameController : MonoBehaviour
             case 3:
                 StartGameDayThree();
                 break;
+            case 4:
+                StartGameDayFour();
+                break;
         }
     }
 
@@ -40,6 +43,10 @@ public class GameController : MonoBehaviour
     public void StartGameDayThree() {
         StartCoroutine(NoTutorial());
         dayText.text = "Day 3";
+    }
+
+    public void StartGameDayFour() {
+        StartCoroutine(FinalDay());
     }
 
     public IEnumerator Tutorial() {
@@ -60,6 +67,11 @@ public class GameController : MonoBehaviour
         mission1Panel.SetActive(true);
         playerDay1.GetComponent<PlayerController>().canMove = true;
 
+    }
+
+    public IEnumerator FinalDay() {
+        yield return new WaitForSeconds(tutorialTime);
+        playerDay1.GetComponent<PlayerController>().canMove = true;
     }
 
 

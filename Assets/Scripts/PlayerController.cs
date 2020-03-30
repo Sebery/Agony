@@ -31,6 +31,7 @@ public class PlayerController : MonoBehaviour
     public int phaseOrMissionNumber = 0;
     public GameObject bushPlanted;
     public bool buyPlant = false;
+    public GameObject death;
 
 
 
@@ -122,6 +123,12 @@ public class PlayerController : MonoBehaviour
                     itemBg.SetActive(false);
                     StartCoroutine(Final());
                     break;
+                case 5:
+                    GetComponent<SpriteRenderer>().enabled = false;
+                    death.SetActive(true);
+                    giveHotdogText.GetComponent<Text>().text = "You won't woke up again!";
+                    StartCoroutine(Final());
+                    break;
             }
         }
     }
@@ -178,6 +185,14 @@ public class PlayerController : MonoBehaviour
             canMove = false;
             giveHotdogText.SetActive(true);
             phaseOrMissionNumber = 4;
+            zoomIn = true;
+        }
+
+        if (collision.CompareTag("Mission4")) {
+            virtualCamera.m_Lens.OrthographicSize = Mathf.Lerp(virtualCamera.m_Lens.OrthographicSize, 1f, zoomInTime);
+            canMove = false;
+            phaseOrMissionNumber = 5;
+            giveHotdogText.SetActive(true);
             zoomIn = true;
         }
     }
